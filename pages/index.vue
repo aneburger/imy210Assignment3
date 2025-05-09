@@ -11,8 +11,7 @@ const searchQuery = ref('')
 
 onMounted(async () => {
   try {
-    //const res = await fetch(`${config.public.strapiUrl}/api/blog-posts?populate=category`)
-    const res = await fetch(`http://localhost:1337/api/blog-posts?populate=category`)
+    const res = await fetch(`${config.public.strapiUrl}/api/blog-posts?populate=category`)
     const postData = await res.json()
     posts.value = postData.data || [] 
     console.log(posts.value);
@@ -22,8 +21,7 @@ onMounted(async () => {
   }
 
   try {
-    //const catRes = await fetch(`${config.public.strapiUrl}/api/categories`)
-    const catRes = await fetch(`http://localhost:1337/api/categories`)
+    const catRes = await fetch(`${config.public.strapiUrl}/api/categories`)
     const categoryData = await catRes.json()
     categories.value = categoryData.data || []
   } catch (err) {
