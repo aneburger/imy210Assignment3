@@ -4,7 +4,7 @@
 
 <template>
     <footer>
-      <p>&copy; 2025 blogger .</p>
+      <p>&copy; (All rights reserved.) 2025 blogger .</p>
     </footer>
 </template>
 
